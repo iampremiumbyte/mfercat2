@@ -5,8 +5,9 @@
 }
 
 body {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: Poppins, sans-serif;
     overflow-x: hidden;
+    background-color: #CD3FA7;
 }
 
 .container {
@@ -23,7 +24,8 @@ body {
 
 h1 {
     text-transform: uppercase;
-    color: #000000;
+    color: #77ACE7;
+    text-shadow: 1px 1px 1px #fff;
     font-size: 3.4em;
     letter-spacing: 2px;
 }
@@ -43,7 +45,7 @@ nav a {
     text-transform: capitalize;
     font-size: 1.4em;
     font-weight: 500;
-    color: #FFA72B;
+    color: #fff;
     margin-right: 1em;
 }
 
@@ -57,13 +59,41 @@ img {
     justify-content: space-between;
     width: 500px;
     text-align: center;
-    color: rgb(0, 0, 0);
+    color: #ffffff;
     margin-top: 3em;
+    font-weight: 300;
 }
 
 .tokenomics h3 {
     font-size: 1.5em;
 }
+
+
+.dollar {
+    display: inline-block;
+    animation-name: rotate;
+    animation-duration: .4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    transition: color .4s;
+    animation-timing-function: linear;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotateY(0deg);
+    }
+
+    50% {
+        color: #fff;
+    }
+
+    100% {
+        transform: rotateY(360deg);
+    }
+}
+
+
 
 @media screen and (max-width: 1024px) {
     img {
